@@ -11,6 +11,6 @@ for line in file :
 file2 = open("Aspects.txt")
 aspects = file2.read()
 analyser  = Analyser(reviews_list=all_reviews,aspects_list=all_aspects)
-chunked = analyser.chunk_reviews()
-for chunk in chunked:
-    print(chunk)
+output = analyser.analyse_reviews()
+for i in output:
+    print(i)

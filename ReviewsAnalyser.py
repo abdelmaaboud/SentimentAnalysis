@@ -15,3 +15,11 @@ class Analyser:
             chunkparser = nltk.RegexpParser(self.chunkgram)
             self.chuncked.append(chunkparser.parse(tagged))
         return self.chuncked
+    def analyse_reviews(self):
+        # call all functions to analyse reviews
+        # return the output
+        chunked = self.chunk_reviews()
+        # we will add functions when complete algorithm implementation
+        return chunked
+
+
