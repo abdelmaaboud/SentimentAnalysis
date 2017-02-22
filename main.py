@@ -33,7 +33,7 @@ def draw_graph_(dict):
 
     rects2 = plt.bar(index + bar_width, neg, bar_width,
                      alpha=opacity,
-                     color='g',
+                     color='r',
                      label='neg')
 
     plt.xlabel('aspects')
