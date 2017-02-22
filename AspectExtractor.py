@@ -15,12 +15,12 @@ class Aspect:
         d = dict()
         for i in range(0, len(l)):
             for j in range(1, len(l)):
-
                 if l[i] == inflect.plural(l[j]):
-                    if not (l[i] in d) or (l[j] in d ):
+                    if not (l[i] in d) or (l[j] in d):
                         d[l[i]] = [l[j]]
                         break
         return d
+
     def filter_nouns(self,all_nouns):
         d=dict()
         Aspect_list_Filterd=[]
@@ -33,7 +33,6 @@ class Aspect:
                   if all_nouns[j] not in Aspect_list_Filterd:
                         Aspect_list_Filterd.append(all_nouns[j])
 
-        #print(Aspect_list_Filterd)
         return Aspect_list_Filterd
 
     def extract_aspects(self):
@@ -57,7 +56,6 @@ class Aspect:
             l.append(inflect.plural(Aspect_list_Filterd[i]))
 
         for i in range(len(Aspect_list_Filterd)):
-
             if Aspect_list_Filterd[i] in l:
                 l2.append(Aspect_list_Filterd[i])
 
@@ -69,7 +67,8 @@ class Aspect:
             d_aspects[Aspect_list_Filterd[i]] = []
 
         d = self.plural(l2)
-        tmp = list()
+        tmp = list(d.keys())
+
         for i in range(len(tmp)):
             d_aspects[tmp[i]] = d[tmp[i]]
 

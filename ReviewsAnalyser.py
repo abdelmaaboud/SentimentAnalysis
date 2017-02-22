@@ -5,7 +5,6 @@ class Analyser:
         self.reviews = reviews_list
         self.aspects=aspects_list
         self.aspects_list_dictionary=aspect_list_dictionary
-        print(aspects_list)
         self.dict = {}
 
 
@@ -86,4 +85,5 @@ class Analyser:
                 pos_per = round((self.dict[j]["pos"] / total) * 100, 2)
                 neg_per =  round((self.dict[j]["neg"] / total) * 100, 2)
                 #print(j + " pos is " + str(pos_per) + "%" + " neg is " + str(neg_per) + '%')
+        #print(self.dict)
         return self.dict
