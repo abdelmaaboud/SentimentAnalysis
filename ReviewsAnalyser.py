@@ -85,5 +85,5 @@ class Analyser:
             if (total != 0):
                 pos_per = round((self.dict[j]["pos"] / total) * 100, 2)
                 neg_per =  round((self.dict[j]["neg"] / total) * 100, 2)
-                print(j + " pos is " + str(pos_per) + "%" + " neg is " + str(neg_per) + '%')
+                #print(j + " pos is " + str(pos_per) + "%" + " neg is " + str(neg_per) + '%')
         return self.dict

@@ -33,7 +33,7 @@ class Aspect:
                   if all_nouns[j] not in Aspect_list_Filterd:
                         Aspect_list_Filterd.append(all_nouns[j])
 
-        print(Aspect_list_Filterd)
+        #print(Aspect_list_Filterd)
         return Aspect_list_Filterd
 
     def extract_aspects(self):
